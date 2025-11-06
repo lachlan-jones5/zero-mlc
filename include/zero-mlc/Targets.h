@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string_view>
+#include <zero-mlc/Utils.h>
 
 namespace zeromlc {
 namespace backend {
@@ -20,7 +21,7 @@ constexpr std::string_view toString(Target target) noexcept {
   case Target::aarch64:
     return "aarch64";
   }
-  std::unreachable();
+  zeromlc::unreachable();
 }
 
 } // end namespace backend

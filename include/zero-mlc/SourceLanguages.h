@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string_view>
+#include <zero-mlc/Utils.h>
 
 namespace zeromlc {
 namespace frontend {
@@ -16,7 +17,7 @@ constexpr std::string_view toString(SourceLanguage source) noexcept {
   case SourceLanguage::pytorch:
     return "PyTorch";
   }
-  std::unreachable();
+  zeromlc::unreachable();
 }
 
 } // end namespace frontend
