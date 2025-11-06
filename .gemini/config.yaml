@@ -1,0 +1,20 @@
+# Configuration for Gemini Code Assist at zero-mlc
+# Based on gemini_config_styleguide.md
+
+have_fun: true
+
+ignore_patterns:
+  - 'build/'
+  - 'dist/'
+  - 'docs/'
+  - '*.lock'
+
+code_review:
+  disable: false
+  comment_severity_threshold: LOW
+  max_review_comments: 100
+  pull_request_opened:
+    help: true
+    summary: false
+    code_review: true
+    include_drafts: false
