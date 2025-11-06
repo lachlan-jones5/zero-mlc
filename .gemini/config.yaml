@@ -11,7 +11,7 @@ ignore_patterns:
 
 code_review:
   disable: false
-  comment_severity_threshold: LOW
+  comment_severity_threshold: MEDIUM
   max_review_comments: 100
   pull_request_opened:
     help: true
